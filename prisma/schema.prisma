@@ -3,12 +3,12 @@ generator client {
 }
 
 datasource db {
-  provider = "sqlite"
+  provider = "postgresql"
   url      = env("DATABASE_URL")
 }
 
 model Task {
-  id          String    @id @default(cuid())
+  id          String    @id @default(uuid())
   description String    @unique
   completed   Boolean
   createdAt   DateTime? @default(now()) @map("created_at")
