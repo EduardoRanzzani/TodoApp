@@ -110,7 +110,7 @@ const Index = () => {
 						{list.map((item) => (
 							<div
 								key={item.id}
-								className='flex items-center justify-between w-full rounded-lg'
+								className='flex items-center justify-between w-full rounded-lg gap-2'
 							>
 								<div className='flex items-center gap-2'>
 									<Checkbox
